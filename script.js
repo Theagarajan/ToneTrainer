@@ -1,4 +1,3 @@
-2 / 2
 const minimalPairs = [
   { word1: { text: 'mā', audio: 'audio/mā.mp3' }, word2: { text: 'má', audio: 'audio/má.mp3' } },
   { word1: { text: 'mǎ', audio: 'audio/mǎ.mp3' }, word2: { text: 'mà', audio: 'audio/mà.mp3' } },

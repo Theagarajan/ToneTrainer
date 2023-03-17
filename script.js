@@ -35,6 +35,7 @@ let currentPair;
 let answer;
 
 function start() {
+  document.getElementById('description').style.display = 'none';
   document.getElementById('start-button').style.display = 'none';
   document.getElementById('game').style.display = 'block';
   nextPair();

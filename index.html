@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tone Trainer</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            margin: 0;
+        }
+        #game {
+            display: none;
+            padding: 20px;
+        }
+        .minimal-pair-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .minimal-pair-container button {
+            margin: 0 10px;
+            background-color: #4CAF50;
+            color: white;
+            font-size: 18px;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+        .minimal-pair-container button:hover {
+            background-color: #45a049;
+        }
+        #play-audio-button {
+            margin-left: 10px;
+        }
+        #feedback {
+            font-size: 18px;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        #start-button, #next-button {
+            background-color: #4CAF50;
+            color: white;
+            font-size: 18px;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            border-radius: 4px;
+            display: block;
+            margin: 20px auto;
+        }
+        #start-button:hover, #next-button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tone Trainer</h1>
+    <button id="start-button" onclick="start()">Start</button>
+    <div id="game">
+        <div class="minimal-pair-container">
+            <button id="word1" onclick="checkAnswer(0)"></button>
+            <button id="word2" onclick="checkAnswer(1)"></button>
+            <button id="play-audio-button" onclick="playAudio()">Play audio again</button>
+        </div>
+        <div id="feedback"></div>
+        <button id="next-button" onclick="nextPair()">Next</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
